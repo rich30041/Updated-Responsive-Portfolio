@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    
+    <title>Weather Dashboard</title>
+  </head>
+  <body class="d-flex flex-column">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
+          <a class="navbar-brand" href="index.html">Tail of the Dragon</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto text-right">
+                      <li class="nav-item">
+                          <a class="nav-link active" href="index.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="weather.html">Weather</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+   
+      </nav>
+  </div>
+   <div class="container">
+     <!-- Beginning of jumbotron  -->
+    <div class=" jumbotron-fluid bg-dark text-white text-center">
+      <div class="container">
+        <h1 class="display-4 ">Weather Dashboard</h1>
+      </div>
+    </div>
+    <!-- Beginning of row 1 -->
+    <div class="row">
+
+      <!-- Beginning of col 2 in row 1 -->
+      <div class="col-12 m-2">
+        <!-- row 1 in col 2 will have todays weather -->
+        <div class="row-12">
+          <div class="card">
+            <div id="weather-today" class="card-body">
+              <!-- javascript -->
+            </div>
+          </div>
+        </div>
+        <!-- Beginning of row 2 in col 2 -->
+        <br>
+        <div class="row-12">
+          <h3>7-Day Forecast:</h3>
+        </div>
+        <!-- Build 5 forecast boxes in row 3 in col 2 -->
+        <br>
+        <div id ="boxes" class="row">
+        <!--javascript  -->
+        </div>
+      </div>
+    </div>
+   
+   </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>

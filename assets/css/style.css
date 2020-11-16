@@ -1,0 +1,159 @@
+/* Used for all files */
+body {
+  background-image: url("../images/simple-pattern.png") ;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+
+  * { box-sizing: border-box;  }
+
+  .all-section {
+    float: left;
+    width: 100%;
+    padding: 30px;
+   /* margin: 0 0 40px; */
+    margin: auto; 
+    max-width: 1000px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+  }
+
+.page-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    color: Black;
+  }
+
+  /* About/Index page */
+  .rich-image {
+    float: left;
+    width: 270px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  #last-para {
+      padding-top: 20px;
+      margin-bottom: 150px;
+      color: red;
+  }
+
+  /* Portfolio css */
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+ 
+h3 {
+  font-size: 25px;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+  /* contact */
+  #contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+  
+/* Footer section */
+.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  background: none;
+  background-color: blue;
+  }
+
+/* Responsive layout  */
+@media screen and (max-width: 640px) {
+  .column { width: 100%}
+}
+
+@media screen and (max-width: 850px) and (min-width: 639px) {
+  .column { width: 100%}
+
+}
+
+@media screen and (max-width: 999px) and (min-width: 849px) {
+    .column { width: 50%}
+ 
+}
+
+@media screen and (min-width: 1000px) {
+  .column { width: 33.3333333%}
+}
+
+
+
