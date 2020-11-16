@@ -33,3 +33,4 @@ https://rich30041.github.io/Updated-Responsive-Portfolio/.
 ![Image of the App](aboutme.png)
 ![Image of the App](portfolio.png)
 ![Image of the App](contact.png)
+![Image of the App](weather.png)
