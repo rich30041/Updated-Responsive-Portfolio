@@ -22,9 +22,6 @@ function FormatDay(date){
     return outday;
 }
 
-// check for stored cities exist and loads the list if so add to choices
-
-
 cityName = "Robbinsville"
 state = "NC"
 CoordLon = "83.80"
@@ -34,7 +31,6 @@ CoordLat = "35.32"
   
   function getResponseWeather(cityName){
     var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}%2c${state}%2c&appid=${key}&units=imperial`; 
- //   var queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid="+ key+ "&lat=" + CoordLat +"&lon=" + CoordLon;
     //Clear content of weather-today
     $("#weather-today").empty();
     $.ajax({
@@ -43,25 +39,13 @@ CoordLat = "35.32"
     }).then(function(response) {
         console.log(response)
       // Create a new table row element
-      //citydate = $("<h3>").text("Robbinsville, NC "+ FormatDay());
       citydate = $("<h3>").text("Tail of the Dragon, NC ");
       $("#weather-today").append(citydate);    
-//   var convtemp = parseInt((response.main.temp)* 9/5 - 459);
-//   var citytemp = $("<p>").text("Temperature: "+ convtemp + " °F");
-    //   var citytemp = $("<p>").text("High Temp: "+ parseInt(response.main.temp_max) + " °F");
-    //   $("#weather-today").append(citytemp);
-    //   var cityLow = $("<p>").text("Low Temp: "+ parseInt(response.main.temp_min) + " °F");
-    //   $("#weather-today").append(cityLow);
-    //   var cityhumid = $("<p>").text("Humidity: "+ response.main.humidity + " %");
-    //   $("#weather-today").append(cityhumid);
-    //   var citywind = $("<p>").text("Wind Speed: "+ parseInt(response.wind.speed) + " MPH");
-    //   $("#weather-today").append(citywind);
       var CoordLon = response.coord.lon;
       var CoordLat = response.coord.lat;
     
      
         //Section to get forecast  
-        // var queryURL3 = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}%2c${state}%2c&appid=${key}&units=imperial`;
         var queryURL3 = `https://api.openweathermap.org/data/2.5/onecall?appid=${key}&lat=${CoordLat}&lon=${CoordLon}&units=imperial`;
         $.ajax({
             url: queryURL3,
@@ -82,9 +66,6 @@ CoordLat = "35.32"
                     var month = date.getMonth()+1;
                     var day = date.getDate();   
                     var dayOfWeek = date.getDay();              
-                 //   var outday = (month<10 ? '0' : '') + month + '/' +
-                   // (day<10 ? '0' : '') + day + '/' +
-                   // date.getFullYear();
                     var outday = `${weekday[dayOfWeek]} ${(month<10 ? '0' : '') + month}/${(day<10 ? '0' : '') + day}`;
                     var forecasth4 = $("<h6>").text(outday);
                     //add image to forecast block
@@ -97,13 +78,10 @@ CoordLat = "35.32"
                     }else if(skyconditions==="Rain"){
                         imgtag.attr("src", "https://img.icons8.com/color/48/000000/rain.png")
                     }
-
-                    // var ptempK = respForecast.list[i].main.temp;
-                    // var convtemp = parseInt((ptempK)* 9/5 - 459);
                     var tempP = $("<p>").text("High Temp: "+ parseInt(respForecast.daily[i].temp.max) + " °F");
-                    var tempL = $("<p>").text("Morn Temp: "+ parseInt(respForecast.daily[i].temp.morn) + " °F");
+                    var tempL = $("<p>").text("Low Temp: "+ parseInt(respForecast.daily[i].temp.morn) + " °F");
                     var humidityP = $("<p>").text("Humidity: "+ respForecast.daily[i].humidity + "%");
-                    var windSp = $("<p>").text("Wind: "+ parseInt(respForecast.daily[i].wind_speed));
+                    var windSp = $("<p>").text("Wind: "+ parseInt(respForecast.daily[i].wind_speed) + " MPH");
                     forecastDiv.append(forecasth4);
                     forecastDiv.append(imgtag);
                     forecastDiv.append(tempP);
