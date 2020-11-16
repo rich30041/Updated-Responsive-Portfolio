@@ -1,5 +1,5 @@
 # Update-Responsive-Portfolio
-Homework for week 8, this involved updating my original Portfolio added a weather forecast for the area.
+Homework for week 8, this involved updating my original Portfolio added a weather forecast button to the Navbar for the area.
 
 # Description
 Homework for week 2 to build 3 pages using HTML, CSS and the Bootstrap framework to make it responsive.
@@ -28,7 +28,7 @@ Bonus
 Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site
 
 # Website
-https://rich30041.github.io/Bootstrap-Homework-Responsive-Portfolio/
+https://rich30041.github.io/Updated-Responsive-Portfolio/.
 
 # Screenshots of application
 ![Image of the App](aboutme.png)
