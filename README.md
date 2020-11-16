@@ -2,8 +2,7 @@
 Homework for week 8, this involved updating my original Portfolio added a weather forecast button to the Navbar for the area.
 
 # Description
-Homework for week 2 to build 3 pages using HTML, CSS and the Bootstrap framework to make it responsive.
-HTML has been validated with https://validator.w3.org/
+Homework for week 8 to update Portfolio with new feature
 
 # Requirements
 * Functional, deployed application
